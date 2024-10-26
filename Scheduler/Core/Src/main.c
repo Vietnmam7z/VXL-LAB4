@@ -100,6 +100,8 @@ int main(void)
   SCH_Add_Task(Task3, 300, 100);
   SCH_Add_Task(Task4, 400, 100);
   SCH_Add_Task(Task5, 500, 0);
+  SCH_Add_Task(get_time, 0, 10);
+  SCH_Add_Task(get_time, 0, 500);
   while (1)
   {
 	  SCH_Dispatch_Tasks();

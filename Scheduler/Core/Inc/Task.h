@@ -20,4 +20,6 @@ void Task4(void);
 
 void Task5(void);
 
+void get_time(void);
+
 #endif /* INC_TASK_H_ */
