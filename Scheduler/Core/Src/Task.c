@@ -6,7 +6,7 @@
  */
 #include "Task.h"
 #include "main.h"
-
+#include <stdio.h>
 void InitLED(void){
 	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, SET);
 	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, SET);
@@ -29,4 +29,7 @@ void Task4(void){
 void Task5(void){
 	HAL_GPIO_TogglePin(LED5_GPIO_Port, LED5_Pin);
 }
-
+void get_time(void){
+	uint32_t time = HAL_GetTick();
+	printf("Time: %lu\n", time);
+}
