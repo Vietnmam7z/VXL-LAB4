@@ -1,0 +1,5 @@
+timer.c:13:6:setTimer	16	static
+timer.c:17:6:timerRun	16	static
+timer.c:27:6:ClearTimer	16	static
+timer.c:31:5:getCounter	16	static
+timer.c:34:6:Time_Cycle_Setting	16	static

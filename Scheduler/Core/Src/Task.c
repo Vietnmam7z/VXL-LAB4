@@ -7,22 +7,7 @@
 #include "Task.h"
 #include "main.h"
 #include <stdio.h>
-void InitLED(void){
-	HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, SET);
-	HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, SET);
-	HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, SET);
-	HAL_GPIO_WritePin(LED4_GPIO_Port, LED4_Pin, SET);
-	HAL_GPIO_WritePin(LED5_GPIO_Port, LED5_Pin, SET);
-}
-void Task1(void){
-	HAL_GPIO_TogglePin(LED1_GPIO_Port, LED1_Pin);
-}
-void Task2(void){
-	HAL_GPIO_TogglePin(LED2_GPIO_Port, LED2_Pin);
-}
-void Task3(void){
-	HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin);
-}
+#include "global.h"
 void Task4(void){
 	HAL_GPIO_TogglePin(LED4_GPIO_Port, LED4_Pin);
 }
@@ -32,4 +17,22 @@ void Task5(void){
 void get_time(void){
 	uint32_t time = HAL_GetTick();
 	printf("Time: %lu\n", time);
+}
+void task_auto_redX(void){
+	statusx = AUTO_RED;
+}
+void task_auto_greenX(void){
+	statusx = AUTO_GREEN;
+}
+void task_auto_yellowX(void){
+	statusx = AUTO_YELLOW;
+}
+void task_auto_redY(void){
+	statusy = AUTO_RED;
+}
+void task_auto_greenY(void){
+	statusy = AUTO_GREEN;
+}
+void task_auto_yellowY(void){
+	statusy = AUTO_YELLOW;
 }

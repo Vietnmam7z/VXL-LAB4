@@ -1,7 +1,9 @@
-Task.c:10:6:InitLED	8	static
-Task.c:17:6:Task1	8	static
-Task.c:20:6:Task2	8	static
-Task.c:23:6:Task3	8	static
-Task.c:26:6:Task4	8	static
-Task.c:29:6:Task5	8	static
-Task.c:32:6:get_time	16	static
+Task.c:11:6:Task4	8	static
+Task.c:14:6:Task5	8	static
+Task.c:17:6:get_time	16	static
+Task.c:21:6:task_auto_redX	4	static
+Task.c:24:6:task_auto_greenX	4	static
+Task.c:27:6:task_auto_yellowX	4	static
+Task.c:30:6:task_auto_redY	4	static
+Task.c:33:6:task_auto_greenY	4	static
+Task.c:36:6:task_auto_yellowY	4	static
