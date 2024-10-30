@@ -10,7 +10,7 @@
 
 #include "global.h"
 #include "led_display.h"
-#include "timer.h"
+
 extern int number_clock1;
 extern int number_clock2;
 extern int save_counterTimeSet;

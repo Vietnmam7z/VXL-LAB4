@@ -7,7 +7,6 @@
 C_SRCS += \
 ../Core/Src/Scheduler.c \
 ../Core/Src/Task.c \
-../Core/Src/button.c \
 ../Core/Src/fsm_automatic.c \
 ../Core/Src/fsm_manual.c \
 ../Core/Src/global.c \
@@ -19,13 +18,11 @@ C_SRCS += \
 ../Core/Src/stm32f1xx_it.c \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
-../Core/Src/system_stm32f1xx.c \
-../Core/Src/timer.c 
+../Core/Src/system_stm32f1xx.c 
 
 OBJS += \
 ./Core/Src/Scheduler.o \
 ./Core/Src/Task.o \
-./Core/Src/button.o \
 ./Core/Src/fsm_automatic.o \
 ./Core/Src/fsm_manual.o \
 ./Core/Src/global.o \
@@ -37,13 +34,11 @@ OBJS += \
 ./Core/Src/stm32f1xx_it.o \
 ./Core/Src/syscalls.o \
 ./Core/Src/sysmem.o \
-./Core/Src/system_stm32f1xx.o \
-./Core/Src/timer.o 
+./Core/Src/system_stm32f1xx.o 
 
 C_DEPS += \
 ./Core/Src/Scheduler.d \
 ./Core/Src/Task.d \
-./Core/Src/button.d \
 ./Core/Src/fsm_automatic.d \
 ./Core/Src/fsm_manual.d \
 ./Core/Src/global.d \
@@ -55,8 +50,7 @@ C_DEPS += \
 ./Core/Src/stm32f1xx_it.d \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
-./Core/Src/system_stm32f1xx.d \
-./Core/Src/timer.d 
+./Core/Src/system_stm32f1xx.d 
 
 
 # Each subdirectory must supply rules for building sources it contributes

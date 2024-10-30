@@ -34,14 +34,9 @@ void fsm_manual_run1(void){
 		}
 		break;
 	case MAN_RED:
-		if(counterMode != 2){
-			DisplayREDX();
-		}
-		else{
-			if(counter_led_x == 0){
-				DisplayMAN_REDX();
-				counter_led_x = 5;
-			}
+		if(counter_led_x == 0){
+			DisplayMAN_REDX();
+			counter_led_x = 5;
 		}
 		ChangeModeX();
 		fsm_clock();
@@ -78,14 +73,9 @@ void fsm_manual_run1(void){
 		}
 		break;
 	case MAN_GREEN:
-		if(counterMode != 3){
-			DisplayGREENX();
-		}
-		else{
-			if(counter_led_x == 0){
-				DisplayMAN_GREENX();
-				counter_led_x = 5;
-			}
+		if(counter_led_x == 0){
+			DisplayMAN_GREENX();
+			counter_led_x = 5;
 		}
 		ChangeModeX();
 		fsm_clock();
@@ -116,7 +106,7 @@ void fsm_manual_run1(void){
 		}
 		SetMode();
 		if(mode4_flag == 1){
-			statusx = MAN_RED;
+			statusx = AUTO_RED;
 			counter_x = save_counterTimeSet*10 + 30;
 			number_clock1 = counter_x/10;
 			statusy = AUTO_GREEN;
@@ -126,14 +116,9 @@ void fsm_manual_run1(void){
 		}
 		break;
 	case MAN_YELLOW:
-		if(counterMode != 4){
-			DisplayYELLOWX();
-		}
-		else{
-			if(counter_led_x == 0){
-				DisplayMAN_YELLOWX();
-				counter_led_x = 5;
-			}
+		if(counter_led_x == 0){
+			DisplayMAN_YELLOWX();
+			counter_led_x = 5;
 		}
 		ChangeModeX();
 		fsm_clock();
@@ -172,14 +157,9 @@ void fsm_manual_run2(void){
 		}
 		break;
 	case MAN_RED:
-		if(counterMode != 2){
-			DisplayREDY();
-		}
-		else{
-			if(counter_led_y == 0){
-				DisplayMAN_REDY();
-				counter_led_y = 5;
-			}
+		if(counter_led_y == 0){
+			DisplayMAN_REDY();
+			counter_led_y = 5;
 		}
 		ChangeModeY();
 		if(counter_y == 0){
@@ -205,14 +185,9 @@ void fsm_manual_run2(void){
 		}
 		break;
 	case MAN_GREEN:
-		if(counterMode != 3){
-			DisplayGREENY();
-		}
-		else{
-			if(counter_led_y == 0){
-				DisplayMAN_GREENY();
-				counter_led_y = 5;
-			}
+		if(counter_led_y == 0){
+			DisplayMAN_GREENY();
+			counter_led_y = 5;
 		}
 		ChangeModeY();
 		if(counter_y == 0){

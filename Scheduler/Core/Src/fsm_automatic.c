@@ -16,7 +16,6 @@ int mode2_flag = 0;
 int mode3_flag = 0;
 int mode4_flag = 0;
 int save_counterTimeSet = 0;
-int save_mode = 0;
 int counter_x = 0;
 int counter_y = 0;
 void SetMode(void){
@@ -255,15 +254,15 @@ void fsm_automatic_runy(){
 			number_clock2 = counter_y/10;
 		}
 		if(counter_y == 0){
-			if(mode4_flag == 1){
+			if(mode3_flag == 1){
 				InitLED();
 				statusy = MAN_GREEN;
 				counter_y = save_counterTimeSet*10;
 				number_clock2 = counter_y/10;
 			}
 			else{
-			statusy = AUTO_GREEN;
-			counter_y = 30;
+				statusy = AUTO_GREEN;
+				counter_y = 30;
 			}
 		}
 		break;
@@ -285,8 +284,8 @@ void fsm_automatic_runy(){
 				number_clock2 = counter_y/10;
 			}
 			else{
-			statusy = AUTO_YELLOW;
-			counter_y = 20;
+				statusy = AUTO_YELLOW;
+				counter_y = 20;
 			}
 		}
 		break;

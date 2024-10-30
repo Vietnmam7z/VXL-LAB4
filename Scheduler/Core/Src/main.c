@@ -25,7 +25,6 @@
 #include "Scheduler.h"
 #include "Task.h"
 #include "fsm_automatic.h"
-#include "timer.h"
 #include "fsm_manual.h"
 #include "input_processing.h"
 /* USER CODE END Includes */
@@ -125,7 +124,6 @@ int main(void)
 	SCH_Add_Task(clockX, 100, 100);
 	SCH_Add_Task(clockY, 100, 100);
 	SCH_Add_Task(fsm_mode, 100, 25);
-
 	SCH_Add_Task(fsm_manual_run1, 10, 10);
 	SCH_Add_Task(fsm_manual_run2, 10, 10);
 	SCH_Add_Task(fsm_for_input_processing1, 10, 10);
