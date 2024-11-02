@@ -8,8 +8,8 @@
 
 #include "main.h"
 #define N0_OF_BUTTONS 3
-#define DURATION_FOR_AUTO_INCREASING 100
-#define DURATION_FOR_AUTO_INCREASING2 150
+#define DURATION_FOR_AUTO_INCREASING 10
+#define DURATION_FOR_AUTO_INCREASING2 15
 #define BUTTON_IS_PRESSED GPIO_PIN_RESET
 #define BUTTON_IS_RELEASED GPIO_PIN_SET
 static GPIO_PinState buttonBuffer[N0_OF_BUTTONS];
@@ -85,7 +85,7 @@ int ProcessButton3(void){
 							 }
 							 else{
 								buttonBuffer[i] = BUTTON_IS_RELEASED;
-								counterForButtonPress1s[i] = 100;
+								counterForButtonPress1s[i] = 10;
 							 }
 
 						 }
