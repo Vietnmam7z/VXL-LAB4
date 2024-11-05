@@ -13,12 +13,13 @@
 
 extern int number_clock1;
 extern int number_clock2;
-extern int save_counterTimeSet;
 extern int DisplayCounter;
-extern int mode1_flag;
 extern int mode2_flag;
 extern int mode3_flag;
 extern int mode4_flag;
+extern int Time_red;
+extern int Time_green;
+extern int Time_yellow;
 extern int counter_x;
 extern int counter_y;
 void fsm_clock(void);
