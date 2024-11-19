@@ -118,6 +118,11 @@ int main(void)
 	counterMode = 1;
 	counterTimeSet = 0;
 	DisplayCounter = 0;
+	SCH_Add_Task(task1, 50, 50);
+	SCH_Add_Task(task2, 100, 100);
+	SCH_Add_Task(task3, 150, 150);
+	SCH_Add_Task(task4, 200, 200);
+	SCH_Add_Task(task5, 250, 250);
 	SCH_Add_Task(fsm_automatic_runx, 0, 10);
 	SCH_Add_Task(fsm_automatic_runy, 0, 10);
 	SCH_Add_Task(fsm_clock, 100, 25);
@@ -129,6 +134,7 @@ int main(void)
 	SCH_Add_Task(fsm_for_input_processing1, 10, 10);
 	SCH_Add_Task(fsm_for_input_processing2, 10, 10);
 	SCH_Add_Task(fsm_for_input_processing3, 10, 10);
+
   while (1)
   {
 	  SCH_Dispatch_Tasks();
@@ -233,8 +239,9 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOA, LED1_Pin|LED2_Pin|LED3_Pin|LED4_Pin
-                          |LED5_Pin|LED6_Pin|LED7_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOA, LED8_Pin|LED9_Pin|LED10_Pin|LED11_Pin
+                          |LED12_Pin|LED1_Pin|LED2_Pin|LED3_Pin
+                          |LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, EN1_Pin|EN2_Pin|EN3_Pin|EN4_Pin
@@ -242,10 +249,12 @@ static void MX_GPIO_Init(void)
                           |LED_GREEN_X_Pin|LED_RED_Y_Pin|LED_YELLOW_Y_Pin|LED_GREEN_Y_Pin
                           |EN0_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pins : LED1_Pin LED2_Pin LED3_Pin LED4_Pin
-                           LED5_Pin LED6_Pin LED7_Pin */
-  GPIO_InitStruct.Pin = LED1_Pin|LED2_Pin|LED3_Pin|LED4_Pin
-                          |LED5_Pin|LED6_Pin|LED7_Pin;
+  /*Configure GPIO pins : LED8_Pin LED9_Pin LED10_Pin LED11_Pin
+                           LED12_Pin LED1_Pin LED2_Pin LED3_Pin
+                           LED4_Pin LED5_Pin LED6_Pin LED7_Pin */
+  GPIO_InitStruct.Pin = LED8_Pin|LED9_Pin|LED10_Pin|LED11_Pin
+                          |LED12_Pin|LED1_Pin|LED2_Pin|LED3_Pin
+                          |LED4_Pin|LED5_Pin|LED6_Pin|LED7_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;

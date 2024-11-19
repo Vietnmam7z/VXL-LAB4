@@ -10,10 +10,6 @@
 
 void InitLED(void);
 
-void Task4(void);
-
-void Task5(void);
-
 void get_time(void);
 
 void task_auto_redX(void);
@@ -27,4 +23,15 @@ void task_auto_redY(void);
 void task_auto_greenY(void);
 
 void task_auto_yellowY(void);
+
+void task1(void);
+
+void task2(void);
+
+void task3(void);
+
+void task4(void);
+
+void task5(void);
+
 #endif /* INC_TASK_H_ */
