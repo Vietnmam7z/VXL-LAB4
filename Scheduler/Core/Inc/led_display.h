@@ -22,4 +22,5 @@ void DisplayMAN_GREENY(void);
 void DisplayMAN_YELLOWX(void);
 void DisplayMAN_YELLOWY(void);
 void InitLED(void);
+void InitAllLED(void);
 #endif /* INC_LED_DISPLAY_H_ */

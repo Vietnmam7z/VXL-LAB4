@@ -13,3 +13,4 @@ led_display.c:170:6:DisplayMAN_GREENY	8	static
 led_display.c:173:6:DisplayMAN_YELLOWX	8	static
 led_display.c:176:6:DisplayMAN_YELLOWY	8	static
 led_display.c:179:6:InitLED	8	static
+led_display.c:187:6:InitAllLED	8	static
